@@ -185,23 +185,7 @@ else:
         df_history = pd.DataFrame(st.session_state.history)
         st.dataframe(df_history, use_container_width=True)
 
-import streamlit.components.v1 as components
+import streamlit.components.v1 as 
 
-# AdSense Header Script & Display Unit
-adsense_code = """
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5291809284478036"
      crossorigin="anonymous"></script>
-
-<!-- Gemina / Abdullah Engine Auto/Display Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5291809284478036"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-"""
-
-# App Screen Par Render Karein
-components.html(adsense_code, height=120)
